@@ -1,3 +1,4 @@
+<% if user_signed_in? %> 
 <h1>Articles</h1>
 
 <ul>
@@ -8,3 +9,7 @@
   <% end %>
 </ul>
 <%= link_to "New Article", new_article_path %>
+<% end %> 
+<% if !user_signed_in? %>
+<h3>You are not logged in. <%= link_to "Login here.", sign_in_path %></h3>
+<% end %>
