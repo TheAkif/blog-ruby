@@ -7,5 +7,8 @@ class Article < ApplicationRecord
     
     validates :title, presence: true
     validates :body, presence: true, length: { minimum: 10 }
+    def self.ransackable_associations(auth_object = nil)
+      ["comments"]
+    end
   end
   
