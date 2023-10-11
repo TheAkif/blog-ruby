@@ -11,5 +11,5 @@
 <%= link_to "New Article", new_article_path %>
 <% end %> 
 <% if !user_signed_in? %>
-<h3>You are not logged in. <%= link_to "Login here.", sign_in_path %></h3>
+<h3>You are not logged in. <%= link_to "Login here.", new_user_session_path %></h3>
 <% end %>
