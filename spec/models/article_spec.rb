@@ -21,6 +21,7 @@ RSpec.describe Article, type: :model do
   end
 
   describe 'CRUD operations' do
+    # let auth = 
     before(:each) do
       @article = Article.create(title: 'Initial Title', body: 'Initial Body')
     end

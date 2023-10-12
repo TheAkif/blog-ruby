@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   
-  devise_for :articles
+  # devise_for :articles, :controllers => { :registrations => 'registrations' }
   
   get '/transcripts', to: "transcripts#index"
   
